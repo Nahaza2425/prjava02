@@ -9,7 +9,7 @@ import java.net.*;
 
 /**
  *
- * @author --> nabid hassan
+ * @author --> nabid
  */
 public class Prjava02 {
 
@@ -18,9 +18,6 @@ public class Prjava02 {
      */
     public static void main(String[] args) {
         System.out.println("versió 0.1 del projecte prjava02"); 	
-        
-        // Línea añadida en la rama branca00
-        System.out.println("Creació d'una branca del projecte prjava02");
         
         try {
             InetAddress adreça = InetAddress.getLocalHost();
@@ -34,7 +31,7 @@ public class Prjava02 {
             System.out.println("Exception occurred");
         }
 
-        // Línea añadida en la rama branca01
+        // Línea añadida solo en la rama branca01
         System.out.println("Afegint codi des de la branca01 del projecte prjava02");
     }
 }
