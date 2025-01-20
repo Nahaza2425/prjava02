@@ -9,7 +9,7 @@ import java.net.*;
 
 /**
  *
- * @author --> Escriu el teu correu electrònic
+ * @author --> nabid hassan
  */
 public class Prjava02 {
 
@@ -18,17 +18,23 @@ public class Prjava02 {
      */
     public static void main(String[] args) {
         System.out.println("versió 0.1 del projecte prjava02"); 	
+        
+        // Línea añadida en la rama branca00
+        System.out.println("Creació d'una branca del projecte prjava02");
+        
         try {
             InetAddress adreça = InetAddress.getLocalHost();
             String hostname = adreça.getHostName();
-            System.out.println("hostname="+hostname);
+            System.out.println("hostname=" + hostname);
             System.out.println("Nom de l'usuari: " + System.getProperty("user.name"));
             System.out.println("Carpeta Personal: " + System.getProperty("user.home"));
             System.out.println("Sistema operatiu: " + System.getProperty("os.name"));
             System.out.println("Versió OS: " + System.getProperty("os.version"));
+        } catch (IOException e) {
+            System.out.println("Exception occurred");
         }
-        catch (IOException e) {
-		System.out.println("Exception occurred");
-        }  
+
+        // Línea añadida en la rama branca01
+        System.out.println("Afegint codi des de la branca01 del projecte prjava02");
     }
 }
